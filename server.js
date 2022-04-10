@@ -15,7 +15,6 @@ const upload = multer({
     }
 });
 
-
 const app = express();
 const PORT = 5000;
 
@@ -29,4 +28,4 @@ app.post('/upload', upload.single('image'), (req, res) => {
 
 // 이미지 저장하기 전 필터 걸려주기
 
-app.listen(PORT, () => console.log("Express server listening on PORT" + PORT));
+app.listen(PORT, () => console.log("서버기 열렸습니다." + PORT));
